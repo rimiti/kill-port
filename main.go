@@ -12,12 +12,14 @@ import (
 func main() {
 	if len(os.Args) < 2 {
 		os.Stderr.WriteString(fmt.Sprintf("Error: port argument missing.\n"))
+		os.Exit(1);
 	}
 
 	port := os.Args[1]
 
 	if _, err := strconv.Atoi(port); err != nil {
 		os.Stderr.WriteString(fmt.Sprintf("Error: port argument is not a number.\n"))
+		os.Exit(1);
 	}
 
 	if runtime.GOOS == "windows" {
