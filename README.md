@@ -3,7 +3,7 @@
 [![MIT License][license-badge]][LICENSE]
 [![PRs Welcome][prs-badge]][prs]
 
-This package provides a powerful function to kill the process running on given port.
+This package provides a powerful cross function to kill (Windows / MacOS / Linux) process running on given port.
 
 ## Installation
 
